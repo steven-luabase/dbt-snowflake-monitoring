@@ -6,6 +6,10 @@ profile: dbt_snowflake_monitoring
 
 model-paths: ["models"]
 
+models:
+  dbt_snowflake_monitoring:
+    +schema: snowflake_monitoring
+
 clean-targets:
   - target
   - dbt_packages
